@@ -1,0 +1,57 @@
+From person table:
+
+Execute:
+> select * from person
+
++ ---------------- + --------------- + -------------- +
+| account_num      | first_name      | last_name      |
++ ---------------- + --------------- + -------------- +
+| 1122334455       | John            | Smith          |
+| 6677889900       | Jane            | Doe            |
+| NULL             | NULL            | NULL           |
++ ---------------- + --------------- + -------------- +
+3 rows
+
+
+From trans table:
+
+Execute:
+> select * from trans
+
++ ----------------- + ---------------- + ----------- + ---------------- + --------------------- +
+| account_type      | account_num      | amount      | description      | transaction_date      |
++ ----------------- + ---------------- + ----------- + ---------------- + --------------------- +
+| CHECKING          | 1122334455       | -369.77     | WITHDRAWAL - CC PAYMENT IN FULL | 2015-11-30            |
+| CHECKING          | 1122334455       | -205.17     | WITHDRAWAL       | 2015-11-08            |
+| CHECKING          | 1122334455       | -120.52     | WITHDRAWAL       | 2015-10-12            |
+| CHECKING          | 1122334455       | -105.46     | WITHDRAWAL       | 2015-11-19            |
+| CHECKING          | 1122334455       | -25         | WITHDRAWAL - CC MINIMUM PAYMENT | 2015-10-31            |
+| CHECKING          | 1122334455       | 27          | DEPOSIT          | 2015-10-21            |
+| CHECKING          | 1122334455       | 1275        | PAYCHECK         | 2015-10-01            |
+| CHECKING          | 1122334455       | 1275        | PAYCHECK         | 2015-11-01            |
+| CREDIT            | 1122334455       | -369.77     | PAYMENT IN FULL  | 2015-11-30            |
+| CREDIT            | 1122334455       | -25         | MINIMUM PAYMENT  | 2015-10-31            |
+| CREDIT            | 1122334455       | 10.08       | DINER (AND RESTAURANT); | 2015-11-14            |
+| CREDIT            | 1122334455       | 52.6        | 12 STREET STORE  | 2015-10-28            |
+| CREDIT            | 1122334455       | 342.17      | BOB'S COMPANY, LLC | 2015-10-04            |
+| SAVINGS           | 1122334455       | 300         | DIRECT DEPOSIT   | 2015-10-01            |
+| SAVINGS           | 1122334455       | 300         | DIRECT DEPOSIT   | 2015-11-01            |
+| CHECKING          | 6677889900       | -390.12     | WITHDRAWAL       | 2015-10-15            |
+| CHECKING          | 6677889900       | -238.24     | WITHDRAWAL       | 2015-11-20            |
+| CHECKING          | 6677889900       | -35.5       | WITHDRAWAL - CC PAYMENT | 2015-11-30            |
+| CHECKING          | 6677889900       | -25         | WITHDRAWAL - CC PAYMENT | 2015-10-28            |
+| CHECKING          | 6677889900       | 122         | DEPOSIT          | 2015-11-14            |
+| CHECKING          | 6677889900       | 451.67      | DEPOSIT          | 2015-11-22            |
+| CHECKING          | 6677889900       | 1275        | PAYCHECK         | 2015-10-01            |
+| CHECKING          | 6677889900       | 1275        | PAYCHECK         | 2015-11-01            |
+| CREDIT            | 6677889900       | -56.12      | BOB'S COMPANY, LLC | 2015-11-27            |
+| CREDIT            | 6677889900       | -35.5       | CC PAYMENT       | 2015-11-30            |
+| CREDIT            | 6677889900       | -25         | MINIMUM PAYMENT  | 2015-10-28            |
+| CREDIT            | 6677889900       | 13.4        | **FOOBAR, LLC**  | 2015-11-02            |
+| CREDIT            | 6677889900       | 145.76      | MIKE'S COMPANY, INC. | 2015-10-15            |
+| SAVINGS           | 6677889900       | -5375       | WITHDRAWAL       | 2015-11-17            |
+| SAVINGS           | 6677889900       | 250         | DEPOSIT          | 2015-10-21            |
+| SAVINGS           | 6677889900       | 5000        | DEPOSIT          | 2015-10-13            |
+| NULL              | NULL             | NULL        | NULL             | NULL                  |
++ ----------------- + ---------------- + ----------- + ---------------- + --------------------- +
+32 rows

@@ -1,0 +1,20 @@
+extend layout
+block content  
+  p
+    +icon-primary("search")
+    |  #{title}:
+    form(method='get', action='/transaction')
+      p
+          select(name = "account_name")
+            - for (var inx = 0; inx < results.length; inx++)
+              option(value = results[inx].account_num) #{results[inx].first_name+" "+results[inx].last_name}
+      p
+          select(name = "account_type")
+            option(value="CHECKING") Checking
+            option(value="SAVINGS") Savings
+            option(value="CREDIT") Credit
+      p
+          select(name = "month")
+            option(value=10) October
+            option(value=11) November
+      input(type='submit', value='See Balance')

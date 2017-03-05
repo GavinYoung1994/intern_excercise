@@ -1,0 +1,8 @@
+extend layout
+block content
+  p
+    +icon-primary("search")
+    |  #{title}:
+    |  #{results}
+    form(method="get", action="/")
+        input(type='submit', value='Return') 

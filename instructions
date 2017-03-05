@@ -1,0 +1,24 @@
+The files dataset_a.csv and dataset_b.csv contain two months worth of bank account interactions for two bank customers stored as CSV files.  Both customers have a Savings account, a Checking account, and a Credit account, with multiple positive and negative interactions with the amount of money in each.  You may assume that, prior to October 10, 2015, all of these accounts had a $0 balance.
+
+Using this data, write a program that will allow a user to specify a month and account type, and receive ending balance totals for each account of that type.
+
+For example, if the user enters:
+OCTOBER SAVINGS
+
+An acceptable output might be:
+
+October Savings Ending Balance:
+AccountHolder001 $100.00
+AccountHolder002 $25.67
+
+Specifications:
+* Your program should accept some form of user input.
+* This program should pull its data from a MySQL database using data supplied in the CSV files as an external data source populating that database. It should not pull data directly from the CSV files.
+* The output must return the month and account type specified and the ending balances that match the query, listing the separate account totals in a meaningful way, such as the method illustrated above.
+* Use the programming language of your choice to write this program.  It must be able to interact with a MySQL database.
+* Retain all information from the CSV files that is relevant to the program's requirements.
+* Feel free to address any ambiguities in specification by making (and documenting) assumptions.
+
+Deliverables:
+* Your program code, along with instructions for how to run it, and how to perform queries using it.
+* A data dump of all data from the MySQL database.

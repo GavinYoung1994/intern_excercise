@@ -1,0 +1,2 @@
+INSERT INTO person VALUES("1122334455","John","Smith");
+INSERT INTO person VALUES("6677889900","Jane","Doe");
