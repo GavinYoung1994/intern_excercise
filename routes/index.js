@@ -3,7 +3,7 @@ var mysql = require('mysql');
 var connection = mysql.createConnection({
   host     : 'fling.seas.upenn.edu',
   user     : 'zhenghao',
-  password : '1994112134',
+  password : 'xxxxxx',
   database : 'zhenghao'
 });
 
